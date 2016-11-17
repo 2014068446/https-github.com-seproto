@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	
+	
+	
+	<package name="login" namespace="/" extends="struts-default">
+		<action name="login" class="com.ust.iics.action.LoginAction">
+			<result name="success">/adminform.jsp</result>
+			<result name="login">/accessdenied.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+	
+	<package name="user" namespace="/" extends="struts-default">
+		<action name="user" class="com.ust.iics.action.LoginAction2">
+			<result name="success">/userform.jsp</result>
+			<result name="login">/accessdenied.jsp</result>
+			<result name="input">/user.jsp</result>
+		</action>
+	</package>
+</struts>
